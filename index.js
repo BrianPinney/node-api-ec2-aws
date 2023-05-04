@@ -32,6 +32,6 @@ const dogs = [
 
 ]
 
-app.get('/', (req,res) => res.send('Welcome to my API'))
+app.get('/', (req,res) => res.json(dogs))
 
 app.listen(PORT, () => console.log(`API is running on port: ${PORT}`))
